@@ -7,5 +7,5 @@ var img=document.getElementById('madi');
     img.style.marginleft=marginleft+'px';
 }*/
 img.onclick=function(){
-    img.style.marginleft='100px';
+    img.style.marginLeft='100px';
 };
