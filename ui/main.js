@@ -8,6 +8,6 @@ function moveRight()
     
 }
 img.onclick=function(){
-    document.bgcolor="red";
+    document.body.style.backgroundColor = "red";
     var interval=setInterval(moveRight,1);
 };
