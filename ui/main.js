@@ -5,8 +5,9 @@ function moveRight()
 {
     marginLeft=marginLeft+10;
     img.style.marginLeft=marginLeft+'px';
-    document.bgcolor="red";
+    
 }
 img.onclick=function(){
+    document.bgcolor="red";
     var interval=setInterval(moveRight,1);
 };
