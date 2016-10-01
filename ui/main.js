@@ -4,7 +4,7 @@ var marginLeft=0;
 function moveRight()
 {
     marginLeft=marginLeft+10;
-    document.body.style.backgroundColor =red;
+    document.body.style.backgroundColor ="red";
     img.style.marginLeft=marginLeft+'px';
     
 }
