@@ -1,6 +1,17 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
+var Pool =require('pg').Pool;
+
+var config={
+    user: 'sarvanan16',
+    database: 'sarvanan16',
+    host:   'db.imad.hasura.io',
+    port:'5432',
+    password: process.env.DB_PASSWORD
+};
+
+var pool =new Pool(config);
 
 var app = express();
 app.use(morgan('combined'));
@@ -34,7 +45,18 @@ app.get('/ui/main.js', function (req, res) {
 });
 
 app.get('/db', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'db.html'));
+  pool.query('select * from test',function(err,result)
+  {
+      if(err)
+      {
+          res.status(500).send(err.toString());
+      }
+      else
+      {
+          res.send(JSON.stringify(result.rows));
+      }
+  }
+  );
 });
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
