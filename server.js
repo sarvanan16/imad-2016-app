@@ -56,7 +56,7 @@ app.get('/db', function (req, res) {
                 {   
                     for(i=0;i<4;i++)
                       {
-                     res.send(JSON.stringify(result.rows[i].count));
+                     res.send(JSON.stringify(result.rows[i]));
                       }
                 }
         }
