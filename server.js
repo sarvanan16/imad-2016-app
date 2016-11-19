@@ -45,18 +45,24 @@ app.get('/ui/main.js', function (req, res) {
 });
 var i=0;
 app.get('/db', function (req, res) {
-  pool.query('select * from test',function(err,result)
-  {
-      if(err)
-      {
-          res.status(500).send(err.toString());
-      }
-      else
-      {
-          res.send(JSON.stringify(result.rows[0].count));
-      }
-  }
-  );
+    
+        pool.query('select * from test',function(err,result)
+         {
+               if(err)
+                {
+                   res.status(500).send(err.toString());
+               }
+                else
+                {   
+                    for(i=0;i<4;i++)
+                      {
+                     res.send(JSON.stringify(result.rows[i].count));
+                      }
+                }
+        }
+        );
+    
+  
 });
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
