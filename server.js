@@ -181,8 +181,8 @@ app.get('/ui/voting.png', function (req, res) {
 });
 
 app.get('/act-register',function(req,res){
-    var name=JSON.stringify('sarva');
-    var roll='36';
+    var name='nan');
+    var roll='46';
     pool.query('INSERT INTO "test" (name,roll) values($1,$2)',[name,roll],function(err,result){
         if(err)
         {
