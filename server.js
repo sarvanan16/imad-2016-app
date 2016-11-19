@@ -20,6 +20,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'welcome.html'));
 });
 
+app.get('/welcome', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'welcome.html'));
+});
+
 app.get('/addc', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'addc.html'));
 });
