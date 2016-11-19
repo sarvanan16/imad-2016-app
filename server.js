@@ -206,7 +206,7 @@ app.get('/act-login',function(req,res){
         }
         else
         {   
-            res.send("User logged"+name);
+            res.send("User logged"+result.rows[0].roll);
         }
     });
     
