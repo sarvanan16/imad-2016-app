@@ -20,7 +20,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
-/*app.get('/addc', function (req, res) {
+app.get('/addc', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'addc.html'));
 });
 
@@ -135,8 +135,8 @@ app.get('/ui/login_bg.jpg', function (req, res) {
 app.get('/ui/logout.gif', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'logout.gif'));
 });
-
-//app.get('/ui/nasim.jpg', function (req, res) {
+/*
+app.get('/ui/nasim.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'nasim.jpg'));
 });
 
