@@ -53,7 +53,7 @@ app.get('/db', function (req, res) {
       }
       else
       {
-          res.send(JSON.stringify(result.row[0]));
+          res.send(JSON.stringify(result.rows[0]));
       }
   }
   );
