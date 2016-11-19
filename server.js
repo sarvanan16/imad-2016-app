@@ -84,8 +84,8 @@ app.get('/voter', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'welcome.html'));
 });
 
-app.get('/ui/voting.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'voting.jpg'));
+app.get('/ui/welcome.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'welcome.jpg'));
 });
 
 app.get('/ui/about.gif', function (req, res) {
