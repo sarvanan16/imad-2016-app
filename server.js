@@ -136,6 +136,10 @@ app.get('/ui/logout.gif', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'logout.gif'));
 });
 
+//app.get('/ui/nasim.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'nasim.jpg'));
+});
+
 app.get('/ui/nasim.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'nasim.jpg'));
 });
