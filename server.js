@@ -55,7 +55,7 @@ app.get('/db', function (req, res) {
                 else
                 {   
                     
-                     res.send(JSON.stringify(result.cols));
+                     res.send(JSON.stringify(result.rows));
                      
                 }
         }
