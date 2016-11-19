@@ -180,23 +180,6 @@ app.get('/ui/voting.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'voting.png'));
 });
 
-app.get('/db', function (req, res) {
-        var name=ram;
-        pool.query('select * from test where name=$1',[name],function(err,result)
-         {
-               if(err)
-                {
-                   res.status(500).send(err.toString());
-               }
-                else
-                {   
-                     res.send(JSON.stringify(result.rows[0].name));
-                }
-        }
-        );
-    
-  
-});
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
