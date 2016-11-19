@@ -197,8 +197,8 @@ app.get('/act-register',function(req,res){
 });
 
 app.get('/cor_register',function(req,res){
-    var username=getElementById('username').value;
-    var password=getElementById('inputpassword').value;
+    var username=document.getElementById('username').value;
+    var password=document.getElementById('inputpassword').value;
     pool.query('SELECT username FROM "user" WHERE username = $1',[username],function(err,result){
         if(err)
         {
@@ -230,8 +230,8 @@ app.get('/cor_register',function(req,res){
 
 
 app.get('/cor_login',function(req,res){
-    var username=getElementById('username').value;
-    var password=getElementById('inputpassword').value;
+    var username=document.getElementById('username').value;
+    var password=document.getElementById('inputpassword').value;
     pool.query('SELECT username FROM "user" WHERE username = $1',[username],function(err,result){
         if(err)
         {
