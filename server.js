@@ -227,6 +227,8 @@ app.get('/cor_register',function(req,res){
     
 });
 
+
+
 app.get('/cor_login',function(req,res){
     var username=getElementById('username').value;
     var password=getElementById('inputpassword').value;
