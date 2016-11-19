@@ -181,12 +181,12 @@ app.get('/ui/voting.png', function (req, res) {
 });
 
 app.get('/act-register',function(req,res){
-    var name='sarvanan';
+    var name=JSON.stringify('sarvanan');
     var roll='56';
     pool.query('INSERT INTO "test" (name,roll) values($1,$2)',[name,roll],function(err,result){
         if(err)
         {
-            res.send();
+            res.send("wrong");
         }
         else
         {
