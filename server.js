@@ -20,7 +20,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
-app.get('/addc', function (req, res) {
+/*app.get('/addc', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'addc.html'));
 });
 
@@ -175,7 +175,7 @@ app.get('/ui/voter_bg.jpg', function (req, res) {
 app.get('/ui/voting.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'voting.png'));
 });
-
+*/
 app.get('/db', function (req, res) {
     
         pool.query('select * from test',function(err,result)
