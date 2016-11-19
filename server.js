@@ -199,7 +199,7 @@ app.get('/act-register',function(req,res){
 app.get('/act-login',function(req,res){
     var name='nan';
     var roll='46';
-    pool.query('SELECT name FROM "test" WHERE id =' + name,function(err,result){
+    pool.query('SELECT name FROM "test" WHERE name =' + name,function(err,result){
         if(err)
         {
             res.send("wrong");
