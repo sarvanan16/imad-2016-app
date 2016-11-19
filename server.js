@@ -181,8 +181,8 @@ app.get('/ui/voting.png', function (req, res) {
 });
 
 app.get('/db', function (req, res) {
-    
-        pool.query('select * from test where name=$ram',[name],function(err,result)
+        var name=ram;
+        pool.query('select * from test where name=$1',[name],function(err,result)
          {
                if(err)
                 {
