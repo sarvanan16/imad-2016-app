@@ -43,7 +43,7 @@ app.get('/ui/madi.png', function (req, res) {
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
-var i=0;
+
 app.get('/db', function (req, res) {
     
         pool.query('select * from test',function(err,result)
@@ -54,10 +54,9 @@ app.get('/db', function (req, res) {
                }
                 else
                 {   
-                    for(i=0;i<4;i++)
-                      {
+                    
                      res.send(JSON.stringify(result.rows[i]));
-                      }
+                     
                 }
         }
         );
