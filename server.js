@@ -191,7 +191,7 @@ app.get('/db', function (req, res) {
                 else
                 {   
                     
-                     res.send(result.rows.length);
+                     res.send(JSON.stringify(result.rows.length));
                      
                 }
         }
