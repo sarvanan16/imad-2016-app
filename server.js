@@ -205,8 +205,10 @@ app.get('/act-login',function(req,res){
             res.send("wrong");
         }
         else
-        {   
-            res.send("User logged"+JSON.stringify(result.rows[0].name));
+        {  if(name==result.rows[0].name)
+            {
+            res.send("User logged"+name);
+            }
         }
     });
     
