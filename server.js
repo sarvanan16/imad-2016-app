@@ -20,32 +20,156 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'welcome.html'));
 });
 
-app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+app.get('/addc', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'addc.html'));
 });
 
-app.get('/article-one', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+app.get('/addc1', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'addc1.html'));
 });
 
-app.get('/article-two', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
+app.get('/admin', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'admin.html'));
 });
 
-app.get('/article-three', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
+app.get('/detail', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'detail.html'));
+});
+
+app.get('/form', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'form.css'));
 });
 
 app.get('/about', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'about.html'));
 });
 
+app.get('/login', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'login.html'));
+});
+
+app.get('/menu', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'menu.css'));
+});
+
+app.get('/register', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'register.html'));
+});
+
+app.get('/result', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'result.html'));
+});
+
+app.get('/style', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+});
+
+app.get('/table', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'table.css'));
+});
+
+app.get('/validate', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'validate.html'));
+});
+
+app.get('/vote', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'vote.html'));
+});
+
+app.get('/voter', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'welcome.html'));
+});
+
 app.get('/ui/voting.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'voting.jpg'));
 });
 
-app.get('/ui/main.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+app.get('/ui/about.gif', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'about.gif'));
+});
+
+app.get('/ui/about_bg.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'about_bg.jpg'));
+});
+
+app.get('/ui/bgm.mp3', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'bgm.mp3'));
+});
+
+app.get('/ui/bird.gif', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'bird.gif'));
+});
+
+app.get('/ui/css.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'css.jpg'));
+});
+
+app.get('/ui/detail_bg.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'detail_bg.jpg'));
+});
+
+app.get('/ui/election_details.gif', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'election_details.gif'));
+});
+
+app.get('/ui/home.gif', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'home.gif'));
+});
+
+app.get('/ui/html5.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'html5.png'));
+});
+
+app.get('/ui/js.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'js.png'));
+});
+
+app.get('/ui/login.gif', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'login.gif'));
+});
+
+app.get('/ui/login_bg.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'login_bg.jpg'));
+});
+
+app.get('/ui/logout.gif', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'logout.gif'));
+});
+
+app.get('/ui/nasim.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'nasim.jpg'));
+});
+
+app.get('/ui/over.gif', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'over.gif'));
+});
+
+app.get('/ui/php.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'php.png'));
+});
+
+app.get('/ui/point.gif', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'point.gif'));
+});
+
+app.get('/ui/register.gif', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'register.gif'));
+});
+
+app.get('/ui/register_bg.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'register_bg.jpg'));
+});
+
+app.get('/ui/s3logo.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 's3logo.jpg'));
+});
+
+app.get('/ui/voter_bg.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'voter_bg.jpg'));
+});
+
+app.get('/ui/voting.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'voting.png'));
 });
 
 app.get('/db', function (req, res) {
