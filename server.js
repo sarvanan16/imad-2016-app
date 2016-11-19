@@ -240,7 +240,7 @@ app.get('/cor_login',function(req,res){
         else
         {  if(username==result.rows[0].username)
             {
-            res.send("User logged"+username);
+            res.send("User logged in "+username);
             }
             else
             {
