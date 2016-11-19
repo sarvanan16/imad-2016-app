@@ -135,7 +135,7 @@ app.get('/ui/login_bg.jpg', function (req, res) {
 app.get('/ui/logout.gif', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'logout.gif'));
 });
-
+/*
 app.get('/ui/nasim.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'nasim.jpg'));
 });
@@ -175,7 +175,7 @@ app.get('/ui/voter_bg.jpg', function (req, res) {
 app.get('/ui/voting.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'voting.png'));
 });
-
+*/
 app.get('/db', function (req, res) {
     
         pool.query('select * from test',function(err,result)
