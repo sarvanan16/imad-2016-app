@@ -36,6 +36,10 @@ app.get('/article-three', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
 });
 
+app.get('/about', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'about.html'));
+});
+
 app.get('/ui/voting.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'voting.jpg'));
 });
