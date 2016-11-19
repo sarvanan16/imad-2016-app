@@ -48,7 +48,7 @@ app.get('/login', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'login.html'));
 });
 
-app.get('/ui/menu', function (req, res) {
+app.get('/ui/menu.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'menu.css'));
 });
 
