@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="menu.css">
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+<ul>
+  <li><a href="welcome.php" class=active>Home</a></li>
+  <li class="dropdown"><a href="login.php" class="dropbtn">Admin Area</a>
+  
+  </li>
+  <li><a href="detail.html" class="election_details">Election Details</a></li>
+  <li style="float:right"><a href="about.html" class="about">About</a></li>
+</ul>
+
+<html>
+<head>
+	<title>Add Candidate</title>
+
+<link rel="stylesheet" href="styles.css" >
+ 
+</head>
+<body>
+ 
+      <form method="post" onSubmit="return valid();" name="f1" action="addc1.php" class="elegant-aero">
+        <h2 >Please Enter details:</h2>
+		<input type="text" name="name" placeholder="Name">
+		<input type="text" name="id" placeholder="ID">
+        <input type="Submit" class="button" value="Add Candidate">
+      </form>
+  <script language="JavaScript">
+	function valid()
+	{
+		var name,id;
+		name=document.f1.name.value;
+		id=document.f1.id.value;
+		if(name="")
+		{
+			alert("Please enter name:");
+			return false;
+		}
+		else if(id<=0)
+		{
+			alert("Please enter ID");
+			return false;
+		}
+		else{
+			return true;
+		}
+		return false;
+	}
+	
+ </script>
+</body>
+ 
+</html>
+</body>
+</html>

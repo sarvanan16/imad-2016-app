@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>
+Election Details
+</title>
+<link rel="stylesheet" href="menu.css">
+<link rel="shortcut icon" href="s3logo.jpg" />
+<script>
+function bigImg(x) {
+    x.style.height = "550px";
+    x.style.width = "800px";
+	document.getElementById("nasim").style.cursor = "zoom-out";
+}
+
+function normalImg(x) {
+    x.style.height = "32px";
+    x.style.width = "32px";
+	document.getElementById("nasim").style.cursor = "zoom-out";
+}
+</script>
+</head>
+<body style="background-image: url(detail_bg.jpg);background-size:cover;" >
+<audio autoplay="true" src="bgm.mp3"></audio>
+
+<ul>
+  <li><a class="active" href="welcome.php">Home</a></li>
+  <li class="dropdown"><a href="login.php" class="dropbtn">Login</a>
+   <div class="dropdown-content">
+      <a href="register.php" class="register">Register</a>
+    </div>
+  </li>
+  <li><a href="detail.html"		class="election_details">Election Details</a></li>
+  <li style="float:right"><a href="about.html" class="about">About</a></li>
+</ul>
+
+</ul>
+<br><br>
+<center><font size="10">This election is officially announced by Chief Election Commisioner <img src="over.gif"></img><img onmouseover="bigImg(this)"  border="0" src="nasim.jpg" alt="Smiley" width="32" height="32" id="nasim" onclick="normalImg(this)">Mr.Nasim Zaidi to elect the Prime Minister of India .
+India is the first country in the world which has adopted online voting system to be used for government election.</font></center>
+<br><br><br>
+<h2>Notice for voter:</h2>
+<ul>
+<li><font size="4"><img src="point.gif"></img>Voter are supposed to register before voting.
+<br><img src="point.gif"></img>Voter should not disclose his/her id and password to any other individual.</li>
+<li><img src="point.gif"></img>Voter should specify username same printed in as aadhar card.</font></li>
+</ul>
+<br><br><br>
+<h2>Notice for candidate:</h2>
+<ul>
+<li><img src="point.gif"></img><font size="4">Candidate should upload his details to election commissioner with valid documents.</li>
+<li><img src="point.gif"></img>Candidate details will be verified by election commissoner and added as a candidate(if all documents are right).</li></font> 
+</ul>
+<br>
+</body>
+</html>
