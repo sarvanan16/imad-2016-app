@@ -41,20 +41,20 @@ li a.dropbtn:hover{
 	color:white;
 	text-decoration: none;
 }
-li .register:hover{
+li a.register:hover{
 	background-image:url("register.gif");
 	background-repeat: no-repeat;
 	background-size: 100px 90px;
 	background-position: center;
 }
-li .election_details:hover  {
+li a.election_details:hover  {
     background-image:url("election_details.gif");
 	background-repeat: no-repeat;
 	background-position: center;
 	color:white;
 	text-decoration: none;
 }
-li .about:hover  {
+li a.about:hover  {
     background-image:url("about.gif");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -63,7 +63,7 @@ li .about:hover  {
 	text-decoration: none;
 
 }
-li .logout:hover  {
+li a.logout:hover  {
     background-image:url("logout.gif");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -81,7 +81,7 @@ li.dropdown {
     position: absolute;
     background-image:url("logi.gif");
     min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .dropdown-content a {
