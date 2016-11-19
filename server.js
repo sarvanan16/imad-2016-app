@@ -182,7 +182,7 @@ app.get('/ui/voting.png', function (req, res) {
 
 app.get('/db', function (req, res) {
     
-        pool.query('select * from "test" where name=ram',function(err,result)
+        pool.query('select * from "test" where name=$ram',function(err,result)
          {
                if(err)
                 {
