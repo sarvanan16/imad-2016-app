@@ -182,7 +182,7 @@ app.get('/ui/voting.png', function (req, res) {
 
 app.get('/db', function (req, res) {
     
-        pool.query('select * from "test" where name=$0',function(err,result)
+        pool.query('select * from "test" where name=$1',[name],function(err,result)
          {
                if(err)
                 {
@@ -191,7 +191,7 @@ app.get('/db', function (req, res) {
                 else
                 {   
                     
-                     res.send(result.rows[0].name);
+                     res.send(JSON.stringify.result.rows[0].name);
                      
                 }
         }
