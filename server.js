@@ -208,7 +208,7 @@ app.get('/cor_register',function(req,res){
         {
             if(name==result.rows[0].username)
             {
-                  res.send("Use another name");
+                res.sendFile(path.join(__dirname, 'ui', 'register.html')); 
             }
             else
             {
@@ -224,6 +224,28 @@ app.get('/cor_register',function(req,res){
                 });
             }
         }
+    
+});
+
+app.get('/cor_login',function(req,res){
+    var username=getElementById('username').value;
+    var password=getElementById('inputpassword').value;
+    pool.query('SELECT username FROM "user" WHERE username = $1',[username],function(err,result){
+        if(err)
+        {
+            res.send("wrong");
+        }
+        else
+        {  if(username==result.rows[0].username)
+            {
+            res.send("User logged"+username);
+            }
+            else
+            {
+                  res.sendFile(path.join(__dirname, 'ui', 'register.html')); 
+            }
+        }
+    });
     
 });
 
