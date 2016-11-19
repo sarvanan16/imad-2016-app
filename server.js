@@ -196,6 +196,37 @@ app.get('/act-register',function(req,res){
     
 });
 
+app.get('/cor_register',function(req,res){
+    var username=getElementById('username').value;
+    var password=getElementById('inputpassword').value;
+    pool.query('SELECT username FROM "user" WHERE username = $1',[username],function(err,result){
+        if(err)
+        {
+            res.send("some error in 1st");
+        }
+        else
+        {
+            if(name==result.rows[0].username)
+            {
+                  res.send("Use another name");
+            }
+            else
+            {
+                pool.query('INSERT INTO "user" (username,password) values($1,$2)',[username,password],function(err,result){
+                if(err)
+                {
+                    res.send("some error in 2nd");
+                   }
+               else
+               {
+                   res.send("User Registered: "+name);
+                  }
+                });
+            }
+        }
+    
+});
+
 app.get('/act-login',function(req,res){
     var name='nan';
     var roll='46';
