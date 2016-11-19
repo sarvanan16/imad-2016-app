@@ -209,6 +209,10 @@ app.get('/act-login',function(req,res){
             {
             res.send("User logged"+name);
             }
+            else
+            {
+                res.send("Please Register");
+            }
         }
     });
     
