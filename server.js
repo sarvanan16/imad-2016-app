@@ -219,7 +219,7 @@ app.get('/cor_register',function(req,res){
                    }
                else
                {
-                   res.send("User Registered: "+name);
+                   res.sendFile(path.join(__dirname, 'ui', 'login.html'));
                   }
                 });
             }
