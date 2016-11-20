@@ -177,6 +177,11 @@ app.get('/ui/voting.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'voting.png'));
 });
 
+function prompt(var name,var roll)
+{
+    return prompt(name,roll);
+}
+
 app.get('/act-register',function(req,res){
     var name=prompt("Enter name","he");
     var roll=prompt("Enter roll.no","1");
