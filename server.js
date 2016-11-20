@@ -38,7 +38,7 @@ function createTemplate (data) {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link href="/ui/style.css" rel="stylesheet" />
       </head> 
-      <body>
+      <body style="background-image: url(/ui/detail_bg.jpg);background-size:cover;background-attachment: fixed;">
           <div class="container">
               <div>
                   <a href="/">Home</a>
@@ -152,7 +152,7 @@ app.get('/check-login', function (req, res) {
 
 app.get('/logout', function (req, res) {
    delete req.session.auth;
-   res.send('<html><body>Logged out!<br/><br/><a href="/">Back to home</a></body></html>');
+   res.send('<html><body style="background-image: url(/ui/detail_bg.jpg);background-size:cover;background-attachment: fixed;">Logged out!<br/><br/><a href="/">Back to home</a></body></html>');
 });
 
 var pool = new Pool(config);
