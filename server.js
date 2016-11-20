@@ -2,7 +2,7 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var Pool =require('pg').Pool;
-
+var inquirer = require('inquirer');
 var config={
     user: 'sarvanan16',
     database: 'sarvanan16',
@@ -179,15 +179,14 @@ app.get('/ui/voting.png', function (req, res) {
 
 function promptname()
 {
-    var name=prompt("Enter name");
+    var name=inquirer.prompt("Enter name");
     return name;
 }
 
 function promptpass()
 {
-     var pass=prompt("Enter pass");
+     var pass=inquirer.prompt("Enter pass");
     return pass;
-    
 }
 
 
