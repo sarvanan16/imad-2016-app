@@ -3,7 +3,7 @@ var morgan = require('morgan');
 var path = require('path');
 var Pool =require('pg').Pool;
 var prompt = require('prompt');
-prompt.start();
+
 var config={
     user: 'sarvanan16',
     database: 'sarvanan16',
@@ -192,6 +192,7 @@ function promptpass()
 
 
 app.get('/act-register',function(req,res){
+    prompt.start();
     prompt.get(['username', 'email'], function (err, result) {
     console.log('Command-line input received:');
     console.log('  username: ' + result.username);
