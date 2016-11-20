@@ -179,12 +179,15 @@ app.get('/ui/voting.png', function (req, res) {
 
 function promptname()
 {
-    return prompt("Enter name");
+    var name=prompt("Enter name");
+    return name;
 }
 
 function promptpass()
 {
-    return prompt("Enter pass");
+     var pass=prompt("Enter pass");
+    return pass;
+    
 }
 
 
