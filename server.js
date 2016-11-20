@@ -2,7 +2,7 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var Pool =require('pg').Pool;
-var prompt=require('prompt');
+
 
 var config={
     user: 'sarvanan16',
@@ -178,26 +178,22 @@ app.get('/ui/voting.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'voting.png'));
 });
 
-/*function promptname()
+function promptname()
 {
-    var name=inquirer.prompt("Enter name");
+    var name=prompt("Enter name");
     return name;
 }
 
-function promptpass()
+function promptroll()
 {
-     var pass=inquirer.prompt("Enter pass");
+     var pass=prompt("Enter roll");
     return pass;
 }
-*/
+
 
 app.get('/act-register',function(req,res){
-    prompt.start();
-    prompt.get(['username', 'email'], function (err, result) {
-    console.log('Command-line input received:');
-    console.log('  username: ' + result.username);
-    console.log('  email: ' + result.email);
-    });
+    var name=promptname();
+    var roll=promptroll();
     pool.query('INSERT INTO "test" (name,roll) values($1,$2)',[name,roll],function(err,result){
         if(err)
         {
