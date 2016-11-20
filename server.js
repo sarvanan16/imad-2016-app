@@ -2,7 +2,8 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var Pool =require('pg').Pool;
-var inquirer = require('inquirer');
+var prompt = require('prompt');
+prompt.start();
 var config={
     user: 'sarvanan16',
     database: 'sarvanan16',
@@ -191,8 +192,11 @@ function promptpass()
 
 
 app.get('/act-register',function(req,res){
-    var name=promptname();
-    var roll=promptpass();
+    prompt.get(['username', 'email'], function (err, result) {
+    console.log('Command-line input received:');
+    console.log('  username: ' + result.username);
+    console.log('  email: ' + result.email);
+    });
     pool.query('INSERT INTO "test" (name,roll) values($1,$2)',[name,roll],function(err,result){
         if(err)
         {
