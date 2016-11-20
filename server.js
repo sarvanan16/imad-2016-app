@@ -193,12 +193,14 @@ app.get('/act-register',function(req,res){
     
 });
 
+function fetchregister()
+{
+    var username=document.getElementById('username').value;
+    var password=document.getElementById('inputpassword').value;
 
 
 app.get('/cor_register',function(req,res){
-    request.open('POST','http://sarvanan16.imad.hasura-app.io/register',true);
-    var username=document.getElementById('username').value;
-    var password=document.getElementById('inputpassword').value;
+    
     pool.query('SELECT username FROM "user" WHERE username = $1',[username],function(err,result){
         if(err)
         {
@@ -227,7 +229,7 @@ app.get('/cor_register',function(req,res){
     
     });
 });
-
+}
 app.get('/cor_login',function(req,res){
     var username=document.getElementById('username').value;
     var password=document.getElementById('inputpassword').value;
@@ -249,6 +251,7 @@ app.get('/cor_login',function(req,res){
     });
     
 });
+
 
 app.get('/act-login',function(req,res){
     var name='nan';
