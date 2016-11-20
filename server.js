@@ -2,7 +2,7 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var Pool =require('pg').Pool;
-
+var bodyParser=require('body-parser');
 
 var config={
     user: 'sarvanan16',
@@ -16,7 +16,7 @@ var pool =new Pool(config);
 
 var app = express();
 app.use(morgan('combined'));
-
+app.use(bodyParser.json());
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'welcome.html'));
 });
@@ -245,8 +245,8 @@ app.get('/cor_register',function(req,res){
 });
 }
 app.get('/cor_login',function(req,res){
-    var username=document.getElementById('username').value;
-    var password=document.getElementById('inputpassword').value;
+    var username=req.body.username;
+    var password=req.body.password;
     pool.query('SELECT username FROM "user" WHERE username = $1',[username],function(err,result){
         if(err)
         {
