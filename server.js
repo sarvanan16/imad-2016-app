@@ -177,14 +177,20 @@ app.get('/ui/voting.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'voting.png'));
 });
 
-function prompt(var name,var roll)
+function promptname()
 {
-    return prompt(name,roll);
+    return prompt("Enter name");
 }
 
+function promptpass()
+{
+    return prompt("Enter pass");
+}
+
+
 app.get('/act-register',function(req,res){
-    var name=prompt("Enter name","he");
-    var roll=prompt("Enter roll.no","1");
+    var name=promptname();
+    var roll=promptpass();
     pool.query('INSERT INTO "test" (name,roll) values($1,$2)',[name,roll],function(err,result){
         if(err)
         {
