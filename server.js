@@ -180,14 +180,14 @@ app.get('/ui/voting.png', function (req, res) {
 
 function promptname()
 {
-    var name=prompt("Enter name");
+    var name=document.getElementById(name);
     return name;
 }
 
 function promptroll()
 {
-     var pass=prompt("Enter roll");
-    return pass;
+     var roll=document.getElementById(roll);
+    return roll;
 }
 
 
