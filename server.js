@@ -227,7 +227,7 @@ app.get('/cor_register',function(req,res){
     
 });
 
-*/
+
 
 app.get('/cor_login',function(req,res){
     var username=document.getElementById('username').value;
@@ -250,7 +250,7 @@ app.get('/cor_login',function(req,res){
     });
     
 });
-
+*/
 app.get('/act-login',function(req,res){
     var name='nan';
     var roll='46';
