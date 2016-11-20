@@ -16,7 +16,9 @@ var pool =new Pool(config);
 
 var app = express();
 app.use(morgan('combined'));
+
 app.use(bodyParser.json());
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'welcome.html'));
 });
