@@ -237,7 +237,7 @@ app.get('/ui/me.png', function (req, res) {
 });
 
 app.get('/ui/bird.gif', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui','bird.gif'));
+  res.sendFile(path.join(__dirname, 'ui','bird.GIF'));
 });
 
 
