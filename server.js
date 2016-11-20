@@ -178,8 +178,8 @@ app.get('/ui/voting.png', function (req, res) {
 });
 
 app.get('/act-register',function(req,res){
-    var name=prompt("Enter name");
-    var roll=prompt("Enter roll.no");
+    var name=prompt("Enter name","he");
+    var roll=prompt("Enter roll.no","1");
     pool.query('INSERT INTO "test" (name,roll) values($1,$2)',[name,roll],function(err,result){
         if(err)
         {
