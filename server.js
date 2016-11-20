@@ -25,7 +25,8 @@ app.get('/welcome', function (req, res) {
 });
 
 app.get('/addc', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'addc.html'));
+  var username=document.getElementById('username').value;
+  res.send(username);
 });
 
 app.get('/addc1', function (req, res) {
@@ -195,7 +196,7 @@ app.get('/act-register',function(req,res){
     });
     
 });
-
+/*
 app.get('/cor_register',function(req,res){
     var username=document.getElementById('username').value;
     var password=document.getElementById('inputpassword').value;
@@ -250,7 +251,7 @@ app.get('/cor_login',function(req,res){
     });
     
 });
-
+*/
 app.get('/act-login',function(req,res){
     var name='nan';
     var roll='46';
