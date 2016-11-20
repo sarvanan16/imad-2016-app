@@ -63,57 +63,16 @@ else{
 <script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
- <script>
- var express = require('express');
-var morgan = require('morgan');
-var path = require('path');
-var Pool =require('pg').Pool;
-
-var config={
-    user: 'sarvanan16',
-    database: 'sarvanan16',
-    host:   'db.imad.hasura-app.io',
-    port:'5432',
-    password: process.env.DB_PASSWORD
-};
-
-var pool =new Pool(config);
-
-var app = express();
-app.use(morgan('combined'));
-
- app.get('/cor_login',function(req,res){
-    var username=document.getElementById('username').value;
-    var password=document.getElementById('inputpassword').value;
-    pool.query('SELECT username FROM "user" WHERE username = $1',[username],function(err,result){
-        if(err)
-        {
-            res.send("wrong");
-        }
-        else
-        {  if(username==result.rows[0].username)
-            {
-            res.send("User logged in "+username);
-            }
-            else
-            {
-                  res.sendFile(path.join(__dirname, 'ui', 'register.html')); 
-            }
-        }
-    });
-    
-});
-</script>
 <div class="container">
       <form class="form-signin" method="POST" action="http://sarvanan16.imad.hasura-app.io/cor_login">
       <?php if(isset($fmsg)){ ?><div class="alert alert-danger" role="alert"> <?php echo $fmsg; ?> </div><?php } ?>
         <h2 class="form-signin-heading"><center>Please Login</center></h2>
         <div class="input-group">
 	  <span class="input-group-addon" id="basic-addon1"><center>Username:</center><br></span>
-	  <center><input type="text" id="username" name="username" class="form-control" placeholder="Username" required><br></center>
+	  <center><input type="text" id='username' name="username" class="form-control" placeholder="Username" required><br></center>
 	</div>
         <label for="inputPassword" class="sr-only"><br><center>Password:<br></center></label>
-        <center><input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required><br></center>
+        <center><input type="password" name="password" id='inputPassword' class="form-control" placeholder="Password" required><br></center>
         <center><button class="btn btn-lg btn-primary btn-block" type="submit" href=""http://sarvanan16.imad.hasura-app.io/cor_login"">Login</button><br></center>
         <center><a class="btn btn-lg btn-primary btn-block" href="register.php">Register</a></center>
       </form>
