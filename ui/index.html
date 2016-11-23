@@ -2,6 +2,14 @@
 <html>
     <head>
         <link href="/ui/style.css" rel="stylesheet" />
+        <script src="/ui/skel.min.js"></script>
+        <script src="/ui/skel-panels.min.js"></script>
+        <script src="/ui/init.js"></script>
+    	<noscript>
+	    	<link rel="stylesheet" href="/ui/skel-noscript.css" />
+    		<link rel="stylesheet" href="/ui/style2.css" />
+    		<link rel="stylesheet" href="/ui/style-desktop.css" />
+    	</noscript>
     </head>
     <style type="text/css">
 #emotion { position: absolute; top: 10px; left: 10px;}
@@ -23,10 +31,43 @@ obj.style.left = y + "px";
  }
 
 </script>
-    <body style="background-image: url(/ui/prbg.jpg);background-size:cover;background-attachment: fixed;background-repeat:no-repeat;">
+    <body>
         <img id="emotion" 
 src="/ui/srvbutter.gif" 
 width="150" height="42" onmouseover="changeImg()"/>
+    <div id="header">
+		<div class="container"> 
+			<div id="logo">
+				<h1 style="font-size:10"><a href="#">SARVANAN P NADAR</a></h1>
+					<span>A COMPUTER ASPIRANT</span>
+			</div>
+
+			<nav id="nav">
+		    	<ul>
+		        	<li  class="active"><a href="home.html">HOMEPAGE</a></li>
+		        	<li><a href="register.html">REGISTER</a></li>
+		        	<li><a href="reference.html">REFERENCE</a></li>
+		        	<li><a href="right-sidebar.html">HELP</a></li>
+		        	<li><a href="no-sidebar.html">CONTACT US</a></li>
+		    	</ul>
+			</nav>
+		</div>
+	</div>
+	<div id="main">
+		<div class="container">
+			<div class="row"> 
+				<div id="content" class="8u skel-cell-important">
+					<section>
+					<header>
+					<font size=5>Do you believe technology can solve social problems?</font>
+					</header>
+					<a href="#" class="image full"><img src="/ui/pic07.jpg" alt="" /></a>
+					<p>If yes, then you can explore this website....if no, then just have a glance of our website.</p>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
         <div class="container">
             <div class="center">
                 <img id='madi' border=3 src="/ui/me.png" class="img-medium"/>
