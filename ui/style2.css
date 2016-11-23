@@ -289,7 +289,7 @@
 	#header
 	{
 		position: relative;
-		background: #2a2f27 url("../ui/bg.jpg") no-repeat;
+		background: #2a2f27 url("/ui/bg.jpg") no-repeat;
 		background-size: cover;
 	}
 
