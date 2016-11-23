@@ -1,38 +1,18 @@
-<!doctype html>
 <html>
-    <head>
-        <link href="/ui/style.css" rel="stylesheet" />
-        <script src="/ui/skel.min.js"></script>
-        <script src="/ui/skel-panels.min.js"></script>
-        <script src="/ui/init.js"></script>
-    	
-	    	<link rel="stylesheet" href="/ui/skel-noscript.css" />
-    		<link rel="stylesheet" href="/ui/style2.css" />
-    		<link rel="stylesheet" href="/ui/style-desktop.css" />
-    	
-    
-    <style type="text/css">
-#emotion { position: absolute; top: 10px; left: 10px;}
-</style>
-<script type="text/javascript">
+<head>
+<title>HOME</title>
 
-function changeImg()
-{
-var x = Math.floor(Math.random()*600);
-var y = Math.floor(Math.random()*600);
-
-
-var obj = document.getElementById("emotion");
-
-obj.style.top = x + "px";
-obj.style.left = y + "px";
-
-
- }
-</script>
-</head> 
-    <body class=homepage>
-    <div id=header>
+<script src="/ui/skel.min.js"></script>
+<script src="/ui/skel-panels.min.js"></script>
+<script src="/ui/init.js"></script>
+	<noscript>
+		<link rel="stylesheet" href="/ui/skel-noscript.css" />
+		<link rel="stylesheet" href="/ui/style.css" />
+		<link rel="stylesheet" href="/ui/style-desktop.css" />
+	</noscript>
+</head>
+<body class="homepage">
+	<div id="header">
 		<div class="container"> 
 			<div id="logo">
 				<h1 style="font-size:10"><a href="#">SARVANAN P NADAR</a></h1>
@@ -40,13 +20,13 @@ obj.style.left = y + "px";
 			</div>
 
 			<nav id="nav">
-		    	<ul>
-		        	<li  class="active"><a href="home.html">HOMEPAGE</a></li>
-		        	<li><a href="register.html">REGISTER</a></li>
-		        	<li><a href="reference.html">REFERENCE</a></li>
-		        	<li><a href="right-sidebar.html">HELP</a></li>
-		        	<li><a href="no-sidebar.html">CONTACT US</a></li>
-		    	</ul>
+			<ul>
+			<li  class="active"><a href="home.html">HOMEPAGE</a></li>
+			<li><a href="register.html">REGISTER</a></li>
+			<li><a href="reference.html">REFERENCE</a></li>
+			<li><a href="right-sidebar.html">HELP</a></li>
+			<li><a href="no-sidebar.html">CONTACT US</a></li>
+			</ul>
 			</nav>
 		</div>
 	</div>
@@ -61,18 +41,18 @@ obj.style.left = y + "px";
 					<a href="#" class="image full"><img src="/ui/pic07.jpg" alt="" /></a>
 					<p>If yes, then you can explore this website....if no, then just have a glance of our website.</p>
 					</section>
+					</div>
+					<div id="sidebar" class="4u">
+						<section>
+							<div id="login_area">
+                               <center>Loading login status...</center>
+                            </div>
+						</section>
+					</div>
 				</div>
-				<div  id="sidebar" class="4u">
-				    <section>
-				        <div id="login_area">
-                          <center>Loading login status...</center>
-                        </div>
-				    </section>
-				</div>
-			</div>
 		</div>
-	</div>
-        <script type="text/javascript" src="/ui/main.js">
-        </script>
-    </body>
+		</div>
+
+		
+	</body>
 </html>
