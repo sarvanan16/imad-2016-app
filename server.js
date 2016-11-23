@@ -240,8 +240,8 @@ app.get('/ui/blue.gif', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui','blue.gif'));
 });
 
-app.get('/ui/butter.gif', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui','butter.gif'));
+app.get('/ui/srvbutter.gif', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','srvbutter.gif'));
 });
 
 
