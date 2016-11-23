@@ -120,24 +120,32 @@
 		article
 		{
 			margin-bottom: 1em;
+			margin-left:1em;
+			margin-right:1em;
 		}
 		
 		section > :last-child,
 		article > :last-child
 		{
 			margin-bottom: 1em;
+			margin-left:1em;
+			margin-right:1em;
 		}
 
 		section:last-child,
 		article:last-child
 		{
 			margin-bottom: 1em;
+			margin-left:1em;
+			margin-right:1em;
 		}
 
 		.row > section,
 		.row > article
 		{
 			margin-bottom: 1em;
+			margin-left:1em;
+			margin-right:1em;
 		}
 
 	/* Images */
