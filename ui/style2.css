@@ -125,19 +125,19 @@
 		section > :last-child,
 		article > :last-child
 		{
-			margin-bottom: 0;
+			margin-bottom: 1em;
 		}
 
 		section:last-child,
 		article:last-child
 		{
-			margin-bottom: 0;
+			margin-bottom: 1em;
 		}
 
 		.row > section,
 		.row > article
 		{
-			margin-bottom: 0;
+			margin-bottom: 1em;
 		}
 
 	/* Images */
