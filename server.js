@@ -74,27 +74,27 @@ app.get('/', function (req, res) {
 
 
 app.get('/ui/style2.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', '/ui/style2.css'));
+  res.sendFile(path.join(__dirname, 'ui', 'style2.css'));
 });
 
 app.get('/ui/style-desktop.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', '/ui/style-desktop.css'));
+  res.sendFile(path.join(__dirname, 'ui', 'style-desktop.css'));
 });
 
 app.get('/ui/skel-noscript.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', '/ui/skel-noscript.css'));
+  res.sendFile(path.join(__dirname, 'ui', 'skel-noscript.css'));
 });
 
 app.get('/ui/skel.min.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', '/ui/skel.min.js'));
+  res.sendFile(path.join(__dirname, 'ui', 'skel.min.js'));
 });
 
 app.get('/ui/skel-panels.min.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', '/ui/skel-panels.min.js'));
+  res.sendFile(path.join(__dirname, 'ui', 'skel-panels.min.js'));
 });
 
 app.get('/ui/init.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', '/ui/init.js'));
+  res.sendFile(path.join(__dirname, 'ui', 'init.js'));
 });
 
 function hash (input, salt) {
