@@ -73,6 +73,30 @@ app.get('/', function (req, res) {
 });
 
 
+app.get('/ui/style2.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', '/ui/style2.css'));
+});
+
+app.get('/ui/style-desktop.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', '/ui/style-desktop.css'));
+});
+
+app.get('/ui/skel-noscript.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', '/ui/skel-noscript.css'));
+});
+
+app.get('/ui/skel.min.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', '/ui/skel.min.js'));
+});
+
+app.get('/ui/skel-panels.min.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', '/ui/skel-panels.min.js'));
+});
+
+app.get('/ui/init.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', '/ui/init.js'));
+});
+
 function hash (input, salt) {
     // How do we create a hash?
     var hashed = crypto.pbkdf2Sync(input, salt, 10000, 512, 'sha512');
