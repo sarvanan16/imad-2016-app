@@ -42,7 +42,6 @@ function createTemplate (data) {
           <div class="container">
               <div style="background-image:url(/ui/home.gif);background-repeat:"no-repeat"">
                   <a href="/">Home</a>
-                 
               </div>
               <hr/>
               <h3>
