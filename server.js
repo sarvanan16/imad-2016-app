@@ -41,7 +41,7 @@ function createTemplate (data) {
       <body>
           <div class="container">
               <div>
-                  <a href="/"><img src=/ui/home.gif height=80% width=80%/></a><br><br><br>
+                  <a href="/"><img src=/ui/home.gif height=90% width=90%/></a><br><br><br>
               </div>
               <hr/>
               <h3>
