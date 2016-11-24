@@ -48,7 +48,7 @@ function createTemplate (data) {
                   <center>${heading}</center>
               </h3>
               <div>
-                 <center> ${date.toDateString()} </center>
+                 <center> Edited : ${date.toDateString()} </center>
               </div>
               <div>
                 ${content}
