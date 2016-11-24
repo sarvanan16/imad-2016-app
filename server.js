@@ -40,7 +40,7 @@ function createTemplate (data) {
       </head> 
       <body>
           <div class="container">
-              <div style="background-image:url(/ui/home.gif)">
+              <div style="background-image:url(/ui/home.gif);background-repeat:no-repeat">
                   <a href="/">Home</a>
               </div>
               <hr/>
