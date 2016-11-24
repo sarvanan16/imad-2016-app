@@ -40,7 +40,7 @@ function createTemplate (data) {
       </head> 
       <body>
           <div class="container">
-              <div>
+              <div style="background:home.gif">
                   <a href="/">Home</a>
               </div>
               <hr/>
