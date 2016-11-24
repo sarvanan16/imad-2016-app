@@ -285,6 +285,10 @@ app.get('/ui/point.gif', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui','point.gif'));
 });
 
+app.get('/ui/home.gif', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','point.gif'));
+});
+
 app.get('/ui/billg.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui','billg.jpg'));
 });
