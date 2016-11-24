@@ -40,8 +40,8 @@ function createTemplate (data) {
       </head> 
       <body>
           <div class="container">
-              <div onmouseover="style="background-image:url(/ui/home.gif);background-repeat:no-repeat;color:white"">
-                  <a href="/">Home</a><br><br><br>
+              <div style="background-image:url(/ui/home.gif);background-repeat:no-repeat;"">
+                  <a href="/" style="color:white">Home</a><br><br><br>
               </div>
               <hr/>
               <h3>
