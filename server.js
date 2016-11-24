@@ -45,10 +45,10 @@ function createTemplate (data) {
               </div>
               <hr/>
               <h3>
-                  ${heading}
+                  <center>${heading}</center>
               </h3>
               <div>
-                  ${date.toDateString()}
+                 <center> ${date.toDateString()} </center>
               </div>
               <div>
                 ${content}
