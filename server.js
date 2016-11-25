@@ -32,6 +32,7 @@ function createTemplate (data) {
     var htmlTemplate = `
     <html>
       <head>
+      <link rel="shortcut icon" href="/ui/ap.png">
           <title>
               ${title}
           </title>
