@@ -11,7 +11,7 @@ function loadLoginForm () {
         <input type="submit" id="login_btn" value="Login" style="background-color: white; /* Green */
     border: none;
     color: black;
-    padding: 15px 20px;
+    padding: 15px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -22,7 +22,7 @@ function loadLoginForm () {
         <input type="submit" id="register_btn" value="Register" style="background-color: white; /* Green */
     border: none;
     color: black;
-    padding: 15px 20px;
+    padding: 15px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
