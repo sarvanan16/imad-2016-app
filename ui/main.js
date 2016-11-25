@@ -1,5 +1,6 @@
 function loadLoginForm () {
     var loginHtml = `
+    
         <h3>Login/Register</h3>
         Enter Username<br>
         <input type="text" id="username" placeholder="username" />
@@ -7,7 +8,18 @@ function loadLoginForm () {
         Enter Password<br>
         <input type="password" id="password" />
         <br/><br/>
-        <input type="submit" id="login_btn" value="Login" />
+        <input type="submit" id="login_btn" value="Login" style="background-color: white; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;"/>
         <input type="submit" id="register_btn" value="Register" />
         `;
     document.getElementById('login_area').innerHTML = loginHtml;
