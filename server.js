@@ -184,7 +184,7 @@ app.get('/check-login', function (req, res) {
 
 app.get('/logout', function (req, res) {
    delete req.session.auth;
-   res.send('<html><body style="background-image: url(/ui/logout.jpg);background-size:cover;background-attachment: fixed;"><centr>Logged out!<br/><img src="thanks.gif">Thanks for visiting<br/>Back to <a href="/"><img src=/ui/home.gif/></a></center></body></html>');
+   res.send('<html><body style="background-image: url(/ui/logout.jpg);background-size:cover;background-attachment: fixed;"><center>Logged out!<br/><img src="thanks.gif">Thanks for visiting<br/>Back to <a href="/"><img src=/ui/home.gif/></a></center></body></html>');
 });
 
 var pool = new Pool(config);
