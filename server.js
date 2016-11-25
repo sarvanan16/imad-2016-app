@@ -76,6 +76,10 @@ app.get('/references', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'references.html'));
 });
 
+app.get('/aboutme', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'aboutme.html'));
+});
+
 
 app.get('/ui/style2.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style2.css'));
